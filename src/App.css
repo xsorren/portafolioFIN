@@ -586,3 +586,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-bottom: 20px;
   }
 }
+@media(max-width: 768px) {
+  .alien {
+    display: none;
+  }
+}
