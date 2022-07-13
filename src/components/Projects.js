@@ -39,7 +39,7 @@ export const Projects = () => {
             <TrackVisibility>
               <div>
                 <h2>Proyectos</h2>
-                <p>Estos son algunos de los proyectos que siempre estoy realizando para perfeccionarme y adquirir mas experiencia</p>
+                <p>Algunos de los proyectos que siempre estoy realizando para perfeccionarme y adquirir mas experiencia</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content id="slideInUp">
                     <Tab.Pane eventKey="first">
