@@ -15,7 +15,7 @@ export const Projects = () => {
       title: "Tienda de Ropa",
       description: "Maqueta de pagina de moda",
       imgUrl: projImg1,
-      link:""
+      link:"https://urban-shop.netlify.app"
     },
     {
       title: "Blog del Cafe",
