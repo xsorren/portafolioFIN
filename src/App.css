@@ -591,3 +591,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: none;
   }
 }
+@media(max-width: 768px) {
+  .banner {
+    margin-top: 50px;
+  }
+}
