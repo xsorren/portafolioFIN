@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
@@ -7,23 +7,27 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+
 export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Tienda de Ropa",
+      description: "Maqueta de pagina de moda",
       imgUrl: projImg1,
+      link:""
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Blog del Cafe",
+      description: "Un cafe?",
       imgUrl: projImg2,
+      link:"https://blogdelcafe-react.netlify.app"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Admin de pacientes",
+      description: "CRUD App",
       imgUrl: projImg3,
+      link:"https://react-pacientes-admin.netlify.app"
     },
   ];
 
@@ -44,6 +48,7 @@ export const Projects = () => {
                           projects.map((project, index) => {
                             return (
                               <ProjectCard
+                                onClick
                                 key={index}
                                 {...project}
                                 />
