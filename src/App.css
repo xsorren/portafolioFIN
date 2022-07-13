@@ -146,6 +146,11 @@ span.navbar-text {
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
+@media (max-width: 376px){
+  .social-icon a {
+    width: 38px;
+    height: 38px;
+}}
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
@@ -160,6 +165,10 @@ span.navbar-text {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
+@media (max-width: 376px){
+  .navbar-text button {
+    font-size: 14px;
+}}
 .navbar-text button span {
   z-index: 1;
 }
