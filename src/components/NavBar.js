@@ -30,7 +30,7 @@ export const NavBar = () => {
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand >
-        <a href="#home" className="spannav">Welcome to my Portfolio</a>
+        <a href="#home" className="spannav">Bienvenido a mi Portafolio</a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("connect")}
             >
-              Contact
+              Contacto
             </Nav.Link>
             <Nav.Link
               href="#skills"
@@ -53,7 +53,7 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
-              Skills
+              Habilidades
             </Nav.Link>
             <Nav.Link
               href="#projects"
@@ -62,24 +62,26 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              Projects
+              Proyectos
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/lautaro-sorrentino-96a3bb227/" target="_blank">
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="#">
+              <a href="https://github.com/xsorren/" target="_blank">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/lautasorren/" target="_blank">
                 <img src={navIcon3} alt="" />
               </a>
             </div>
+            <a href='/CV-LautaroSorrentino.pdf' download>
             <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Download CV</span>
+              <span>Descargar CV</span>
             </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

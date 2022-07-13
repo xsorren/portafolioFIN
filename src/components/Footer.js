@@ -8,15 +8,18 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center">
-          <Col size={12} sm={6} className="text-center text-sm-start logofooter">
-          <a classname="text-center" href="#home"><ArrowUpCircle /> <br/> Volver Arriba</a>
-          </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
+        <Row className="align-items-center justify-content-center">
+          <Col size={12} sm={3} className="text-center">
             <div className="social-icon mx-0">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+            <a href="https://www.linkedin.com/in/lautaro-sorrentino-96a3bb227/" target="_blank">
+                <img src={navIcon1} alt="" />
+              </a>
+              <a href="https://github.com/xsorren/" target="_blank">
+                <img src={navIcon2} alt="" />
+              </a>
+              <a href="https://www.instagram.com/lautasorren/" target="_blank">
+                <img src={navIcon3} alt="" />
+              </a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>

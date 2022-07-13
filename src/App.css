@@ -580,13 +580,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
   text-decoration: none;
 }
-.logofooter a{
-  text-decoration: none;
-  color: white;
-}
-.logofooter a:hover{
-color: white;
-}
+
 @media(max-width: 768px) {
   .logofooter {
     margin-bottom: 20px;
