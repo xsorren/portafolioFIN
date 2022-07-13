@@ -29,8 +29,8 @@ export const NavBar = () => {
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
-        <span className="spannav">Welcome to my Portfolio</span>
+        <Navbar.Brand >
+        <a href="#home" className="spannav">Welcome to my Portfolio</a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
