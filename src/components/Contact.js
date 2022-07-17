@@ -31,6 +31,7 @@ export const Contact = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formDetails),
+      mode:"no-cors"
     });
     setButtonText("Send");
     let result = await response.json();
@@ -41,11 +42,6 @@ export const Contact = () => {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
   };
-
-  app.get('/cors', (req, res) => {
-    res.set('Access-Control-Allow-Origin', 'https://git.heroku.com/polar-castle-44028.git');
-    res.send({ "msg": "This has CORS enabled 🎈" })
-    })
 
   return (
     <section className="contact" id="connect">
