@@ -31,7 +31,7 @@ export const Contact = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formDetails),
-      mode:"no-cors"
+      mode:"no-cors",
     });
     setButtonText("Send");
     let result = await response.json();
