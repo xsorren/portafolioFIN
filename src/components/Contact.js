@@ -28,11 +28,11 @@ export const Contact = () => {
     let response = await fetch("https://git.heroku.com/polar-castle-44028.git/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(formDetails),
-      mode:"no-cors",
-    });
+      mode: "no-cors"
+  });
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
