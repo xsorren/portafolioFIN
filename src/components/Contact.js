@@ -25,23 +25,23 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("https://git.heroku.com/polar-castle-44028.git/contact", {
+    let response = await fetch("https://git.heroku.com/contactoapi.git/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(formDetails),
-      mode: "no-cors"
-  });
+    });
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code === 200) {
+    if (result.code == 200) {
       setStatus({ succes: true, message: 'Message sent successfully'});
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
   };
+
 
   return (
     <section className="contact" id="connect">
