@@ -55,7 +55,7 @@ export const Banner = () => {
             <TrackVisibility>
               <div className="animate__animated animate__fadeIn">
                 <h1>{`Hola! Soy Lautaro`} <br /><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Soy desarrollador web, apasionado por la tecnología y la programación. Con un año de experiencia, trabajando bajo distintas metodologias. Enfocandome siempre en mejorar mi desempeño, aprender de cada error, para superarme tanto profesional como personalmente.</p>
+                  <p>Soy desarrollador web, apasionado por la tecnología y la programación. Con tres años de experiencia, trabajando bajo distintas metodologias. Enfocandome siempre en mejorar mi desempeño, aprender de cada error, para superarme tanto profesional como personalmente.</p>
                   <a href="#connect">Contactar Ahora <ArrowRightCircle size={25} /></a>
               </div>
             </TrackVisibility>
