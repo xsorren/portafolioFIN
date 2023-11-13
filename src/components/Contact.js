@@ -6,18 +6,15 @@ import emailjs from '@emailjs/browser'
 
 export const Contact = () => {
   const form = useRef();
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('gmail','hola',form.current,'2qnl275lOMpBYelkp')
-    .then((result) => {
-      console.log(result.text);
-  }, (error) => {
-      console.log(error.text);
-  });
-};
-
-
+    emailjs.sendForm('service_zbl5e9g', 'template_yumg82m', form.current, '2qnl275lOMpBYelkp')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
   return (
     <section className="contact" id="connect">
       <Container>

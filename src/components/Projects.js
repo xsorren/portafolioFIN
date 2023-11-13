@@ -18,10 +18,10 @@ export const Projects = () => {
       link:"https://urban-shop.netlify.app"
     },
     {
-      title: "Blog del Cafe",
-      description: "Un cafe?",
+      title: "Cultivares Club",
+      description: "Club Cannabico",
       imgUrl: projImg2,
-      link:"https://blogdelcafe-react.netlify.app"
+      link:"https://cultivares.club"
     },
     {
       title: "Admin de pacientes",
