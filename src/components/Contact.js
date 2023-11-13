@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react"; 
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import TrackVisibility from 'react-on-screen';
@@ -6,13 +6,19 @@ import emailjs from '@emailjs/browser'
 
 export const Contact = () => {
   const form = useRef();
+  const [buttonText, setButtonText] = useState("ENVIAR");
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setButtonText("ENVIANDO...");
     emailjs.sendForm('service_zbl5e9g', 'template_yumg82m', form.current, '2qnl275lOMpBYelkp')
       .then((result) => {
           console.log(result.text);
+          setButtonText("ENVIADO!");
+          setTimeout(() => setButtonText("ENVIAR"), 3000);
       }, (error) => {
           console.log(error.text);
+          setButtonText("ENVIAR");
       });
   }
   return (
@@ -45,7 +51,7 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6"  placeholder="Mensaje" name="message" ></textarea>
-                      <button type="submit"><span>ENVIAR</span></button>
+                      <button type="submit"><span>{buttonText}</span></button>
                     </Col>
                     
                   </Row>
